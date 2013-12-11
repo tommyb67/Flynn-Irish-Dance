@@ -30,6 +30,13 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'foundation-rails'
 
+group :test, :development, :test do
+  gem 'rspec-rails'
+  gem 'pry-rails'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
