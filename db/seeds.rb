@@ -8,6 +8,6 @@
 
 Lesson.destroy_all
 
-Lesson.create(level: "Beginner", type: "Instruction", location: "Aisling Center", datetime: Date.now )
-Lesson.create(level: "Adv Bed & Novice", type: "Instruction", location: "Aisling Center", datetime: Date.now )
-Lesson.create(level: "All Levels", type: "Traditional Set/Hard Shoe", location: "Nepperhan Studio", datetime: Date.now )
+Lesson.create(level: "Beginner", category: "Instruction", location: "Aisling Center", datetime: Time.now)
+Lesson.create(level: "Adv Bed & Novice", category: "Instruction", location: "Aisling Center", datetime: Time.now)
+Lesson.create(level: "All Levels", category: "Traditional Set/Hard Shoe", location: "Nepperhan Studio", datetime: Time.now)
