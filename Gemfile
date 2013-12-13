@@ -31,6 +31,9 @@ gem 'foundation-rails'
 
 gem 'devise'
 
+gem 'paperclip'
+gem 'aws-sdk'
+
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry-rails'
