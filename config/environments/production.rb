@@ -69,15 +69,7 @@ FlynnIrishDance::Application.configure do
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
 
-  # config/environments/production.rb
-  config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => ENV['S3_BUCKET_NAME'],
-    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-  }
-}
+
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
@@ -87,4 +79,17 @@ FlynnIrishDance::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+ # config/environments/production.rb
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['S3_BUCKET_NAME'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
+  # ImageMagic path
+    Paperclip.options[:command_path] = "/opt/ImageMagick/bin/convert"
+
 end
