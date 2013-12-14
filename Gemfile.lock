@@ -33,6 +33,10 @@ GEM
       uuidtools (~> 2.1)
     bcrypt-ruby (3.1.2)
     builder (3.1.4)
+    clearance (1.1.0)
+      bcrypt-ruby
+      email_validator (~> 1.4)
+      rails (>= 3.1)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.3)
@@ -45,13 +49,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    devise (3.2.1)
-      bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    email_validator (1.4.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.0.2)
     factory_girl (4.3.0)
@@ -82,7 +82,6 @@ GEM
     multi_json (1.8.2)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
-    orm_adapter (0.5.0)
     paperclip (3.5.2)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -158,16 +157,14 @@ GEM
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     uuidtools (2.1.4)
-    warden (1.2.3)
-      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   aws-sdk
+  clearance
   coffee-rails (~> 4.0.0)
-  devise
   factory_girl_rails
   ffaker
   foundation-rails

@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'foundation-rails'
 
-gem 'devise'
+gem 'clearance'
 
 gem 'paperclip'
 gem 'aws-sdk'

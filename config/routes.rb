@@ -1,6 +1,8 @@
 FlynnIrishDance::Application.routes.draw do
 
-  root 'welcome#index'
+  root 'static#index'
+
+  get 'about', to: 'static#about'
 
   resources :lessons do
   end
