@@ -11,3 +11,8 @@ Lesson.destroy_all
 Lesson.create(level: "Beginner", category: "Instruction", location: "Aisling Center", datetime: Time.now)
 Lesson.create(level: "Adv Bed & Novice", category: "Instruction", location: "Aisling Center", datetime: Time.now)
 Lesson.create(level: "All Levels", category: "Traditional Set/Hard Shoe", location: "Nepperhan Studio", datetime: Time.now)
+
+
+User.destroy_all
+
+User.create(email: "jane@example.com", first_name: "jane", last_name)
