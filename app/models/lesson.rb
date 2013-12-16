@@ -1,2 +1,2 @@
-class Lesson < Event
+class Lesson < ActiveRecord::Base
 end

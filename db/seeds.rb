@@ -13,6 +13,11 @@ Lesson.create(level: "Adv Bed & Novice", category: "Instruction", location: "Ais
 Lesson.create(level: "All Levels", category: "Traditional Set/Hard Shoe", location: "Nepperhan Studio", datetime: Time.now)
 
 
+Event.destroy_all
+
+Event.create(datetime: Time.now, location: "gaelic park", type: "show")
+
+
 User.destroy_all
 
 User.create(email: "jane@example.com", first_name: "jane", last_name: "smith", gender: "f", age: 12, type: "dancer", level: "beginner")
