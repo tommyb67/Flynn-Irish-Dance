@@ -1,2 +1,2 @@
-class Instructor < ActiveRecord::Base
+class Instructor < User
 end

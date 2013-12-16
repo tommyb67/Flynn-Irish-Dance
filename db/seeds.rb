@@ -15,4 +15,4 @@ Lesson.create(level: "All Levels", category: "Traditional Set/Hard Shoe", locati
 
 User.destroy_all
 
-User.create(email: "jane@example.com", first_name: "jane", last_name)
+User.create(email: "jane@example.com", first_name: "jane", last_name: "smith", gender: "f", age: 12, type: "dancer", level: "beginner")

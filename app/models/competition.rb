@@ -1,2 +1,2 @@
-class Competition < ActiveRecord::Base
+class Competition < Event
 end

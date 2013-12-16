@@ -1,4 +1,4 @@
-class Dancer < ActiveRecord::Base
+class Dancer < User
   validates :age, :gender, :level, presence: true
   validates :gender, inclusion: ["m", "f"]
 
