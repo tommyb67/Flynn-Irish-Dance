@@ -15,9 +15,9 @@ Lesson.create(level: "All Levels", category: "Traditional Set/Hard Shoe", locati
 
 Event.destroy_all
 
-Event.create(datetime: Time.now, location: "gaelic park", type: "show")
+Event.create(datetime: Time.now, location: "gaelic park", type: "Show")
 
 
 User.destroy_all
 
-User.create(email: "jane@example.com", first_name: "jane", last_name: "smith", gender: "f", age: 12, type: "dancer", level: "beginner")
+User.create(email: "jane@example.com", first_name: "jane", last_name: "smith", gender: "f", age: 12, type: "Dancer", level: "beginner")

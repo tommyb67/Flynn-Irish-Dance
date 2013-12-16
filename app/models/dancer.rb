@@ -6,7 +6,4 @@ class Dancer < User
   has_many :guardians
   has_many :events
 
-  def set_type
-    self.type = 'Dancer'
-  end
 end
