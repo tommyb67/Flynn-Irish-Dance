@@ -16,8 +16,13 @@ Lesson.create(level: "All Levels", category: "Traditional Set/Hard Shoe", locati
 Event.destroy_all
 
 Event.create(datetime: Time.now, location: "gaelic park", type: "Show")
+Event.create(datetime: Time.now, location: "yorktown heights", type: "Competition")
+Event.create(datetime: Time.now, location: "new haven", type: "Competition")
 
 
 User.destroy_all
 
-User.create(email: "jane@example.com", first_name: "jane", last_name: "smith", gender: "f", age: 12, type: "Dancer", level: "beginner")
+User.create(email: "jane@example.com", first_name: "jane", last_name: "smith", gender: "f", age: 12, type: "Dancer", level: "novice")
+User.create(email: "matt@example.com", first_name: "matt", last_name: "jones", gender: "m", age: 8, type: "Dancer", level: "beginner")
+User.create(email: "bill@example.com", first_name: "bill", last_name: "west", gender: "m", type: "Guardian")
+User.create(email: "mary@example.com", first_name: "mary", last_name: "east", gender: "f", type: "Guardian")

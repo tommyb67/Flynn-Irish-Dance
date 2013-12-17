@@ -1,0 +1,21 @@
+<table class="center">
+  <tr>
+    <th scope="col" colspan="5">Dancers</th>
+  </tr>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">email</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Age</th>
+    </tr>
+  <% @dancers.each do |dancer| %>
+    <tr>
+      <td><%= dancer.first_name %></td>
+      <td><%= dancer.last_name %></td>
+      <td><%= dancer.email %></td>
+      <td><%= dancer.gender %></td>
+      <td><%= dancer.age %></td>
+    </tr>
+  <% end %>
+</table>

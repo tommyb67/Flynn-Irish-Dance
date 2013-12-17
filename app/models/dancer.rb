@@ -5,5 +5,6 @@ class Dancer < User
   has_many :lessons
   has_many :guardians
   has_many :events
+  has_many :competitions
 
 end

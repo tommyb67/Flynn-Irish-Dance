@@ -28,7 +28,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'rails_12factor'
-gem 'foundation-rails', group: :production
+gem 'foundation-rails'#, group: :production
 gem 'clearance'
 gem 'paperclip'
 gem 'aws-sdk'
@@ -40,6 +40,7 @@ group :test, :development do
   gem 'pry-rails'
   gem 'factory_girl_rails'
   gem 'ffaker'
+  gem 'shoulda-matchers'
 end
 
 
