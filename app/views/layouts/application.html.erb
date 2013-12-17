@@ -6,6 +6,9 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "Flynn Irish Dance" %></title>
 
+    <link type="text/css" media="screen" rel="stylesheet" href="responsive-tables.css" />
+    <script type="text/javascript" src="responsive-tables.js"></script>
+
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
