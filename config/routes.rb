@@ -4,11 +4,10 @@ FlynnIrishDance::Application.routes.draw do
 
   get 'about', to: 'static#about'
 
-  resources :lessons do
+  resources :lessons, :dancers do
   end
 
-  resources :dancers do
-  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -22,7 +22,7 @@ Event.create(datetime: Time.now, location: "new haven", type: "Competition")
 
 User.destroy_all
 
-User.create(email: "jane@example.com", first_name: "jane", last_name: "smith", gender: "f", age: 12, type: "Dancer", level: "novice")
-User.create(email: "matt@example.com", first_name: "matt", last_name: "jones", gender: "m", age: 8, type: "Dancer", level: "beginner")
-User.create(email: "bill@example.com", first_name: "bill", last_name: "west", gender: "m", type: "Guardian")
-User.create(email: "mary@example.com", first_name: "mary", last_name: "east", gender: "f", type: "Guardian")
+User.create(email: "jane@example.com", first_name: "jane", last_name: "smith", gender: "f", age: 12, type: "Dancer", level: "novice", password: "jane")
+User.create(email: "matt@example.com", first_name: "matt", last_name: "jones", gender: "m", age: 8, type: "Dancer", level: "beginner", password: "matt")
+User.create(email: "bill@example.com", first_name: "bill", last_name: "west", gender: "m", type: "Guardian", password: "bill")
+User.create(email: "mary@example.com", first_name: "mary", last_name: "east", gender: "f", type: "Guardian", password: "mary")
