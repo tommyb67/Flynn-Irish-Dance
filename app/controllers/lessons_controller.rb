@@ -1,6 +1,6 @@
 class LessonsController < ApplicationController
 
-  def show
+  def index
     @lessons = Lesson.all
   end
 end

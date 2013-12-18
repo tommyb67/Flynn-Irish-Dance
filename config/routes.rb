@@ -1,11 +1,23 @@
 FlynnIrishDance::Application.routes.draw do
 
   root 'static#index'
-
   get 'about', to: 'static#about'
 
   resources :lessons, :dancers do
   end
+
+ # constraints Clearance::Constraints::SignedIn.new { |user| user.admin? } do
+ #    root to: 'admin'
+ #  end
+
+  # constraints Clearance::Constraints::SignedIn.new do
+  #   redirect 'static#index'
+  # end
+
+  # constraints Clearance::Constraints::SignedOut.new do
+  #   redirect 'static#index'
+  # end
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

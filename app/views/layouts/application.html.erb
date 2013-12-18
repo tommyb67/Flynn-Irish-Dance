@@ -26,24 +26,34 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="active"><a href="#">Right Nav Button Active</a></li>
-      <li class="has-dropdown">
-        <a href="#">Right Button with Dropdown</a>
-        <ul class="dropdown">
-          <li><a href="#">First link in dropdown</a></li>
-        </ul>
-      </li>
+      <li class="active"><%= link_to "Join Us!", sign_up_path %></li>
+      <li class="active"><%= link_to "Existing Users", sign_in_path %></li>
+       <li class="active"><%= link_to "Log Out", sign_out_path %></li>
     </ul>
 
       <!-- Left Nav Section -->
     <ul class="left">
-      <li><a href="about">About</a></li>
-      <li><a href="lessons/show">Schedule</a></li>
-      <li><a href="dancers/show">Dancers</a></li>
-       <li><a href="#">Events</a></li>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Class Schedule", lessons_path %></li>
+      <li><%= link_to "Dancers", dancers_path %></li>
     </ul>
   </section>
 </nav>
+
+   <% if signed_in? %>
+      Signed in as: <%= current_user.email %>
+      <%= link_to 'Sign out', sign_out_path, :method => :delete %>
+    <% else %>
+      <%= link_to 'Sign in', sign_in_path %>
+    <% end %>
+
+    <div id="flash">
+      <% flash.each do |key, value| %>
+        <div class="flash <%= key %>"><%= value %></div>
+      <% end %>
+    </div>
+
+
 
 
     <%= yield %>

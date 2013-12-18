@@ -1,6 +1,6 @@
 class DancersController < ApplicationController
 
-  def show
+  def index
     @dancers = Dancer.all
   end
 end
