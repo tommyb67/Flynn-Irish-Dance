@@ -1,25 +1,12 @@
-<div class='other-user-info'>
-      <%= form.label :first_name %>
-      <%= form.text_field :first_name %>
+ <!-- ########### INFO NEEDED FOR DANCERS ONLY ############## -->
 
-      <%= form.label :last_name %>
-      <%= form.text_field :last_name %>
-    </div>
-
-    <div class='user-type'>
-      <%= form.label :what_are_you_interested_in? %>
-      <%= form.select(:option, options_for_select([['Dancer', 1], ['Guardian', 2], ['Client', 3]], selected: :option )) %>
-    </div>
-
-      <!-- if selected == 1  do -->
       <div class='other-user-info'>
-         <%= form.label :gender %>
+        <%= form.label :gender %>
          <%= form.text_field :gender %>
 
          <%= form.label :age %>
          <%= form.text_field :age %>
 
          <%= form.label :level %>
-         <%= form.select(:option, options_for_select([['Beginner', 1], ['Adv Beg/Novice', 2]], selected: :option )) %>
+         <%= form.select(:type, options_for_select([['Beginner', "beginner"], ['Adv Beg/Novice', 'adv beg/novice']] )) %>
        </div>
-       <!-- else -->

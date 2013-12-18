@@ -6,6 +6,8 @@ FlynnIrishDance::Application.routes.draw do
   resources :lessons, :dancers do
   end
 
+  resources :users, only: [:create]
+
  # constraints Clearance::Constraints::SignedIn.new { |user| user.admin? } do
  #    root to: 'admin'
  #  end

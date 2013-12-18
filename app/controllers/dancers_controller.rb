@@ -1,4 +1,4 @@
-class DancersController < ApplicationController
+class DancersController < UsersController
 
   def index
     @dancers = Dancer.all
