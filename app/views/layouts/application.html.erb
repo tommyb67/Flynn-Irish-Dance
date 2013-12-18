@@ -28,7 +28,7 @@
     <ul class="right">
       <li class="active"><%= link_to "Join Us!", sign_up_path %></li>
       <li class="active"><%= link_to "Existing Users", sign_in_path %></li>
-       <li class="active"><%= link_to "Log Out", sign_out_path %></li>
+       <li class="active"><%= link_to "Log Out", sign_out_path, :method => :delete %></li>
     </ul>
 
       <!-- Left Nav Section -->
@@ -52,9 +52,6 @@
         <div class="flash <%= key %>"><%= value %></div>
       <% end %>
     </div>
-
-
-
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
