@@ -2,7 +2,7 @@ FlynnIrishDance::Application.routes.draw do
   root 'static#index'
   get 'about', to: 'static#about'
 
-  resources :lessons, :dancers do
+  resources :lessons, :dancers, do
   end
 
   comfy_route :cms_admin, :path => '/admin'
